@@ -1,0 +1,16 @@
+void bollaInt (metaImage * image);
+p_size ** bolla (p_size ** image, int dimx, int dimy, int ii);
+int  bolla_connessa(int y_vox, int z_vox, int *centro_ora, p_size ** image, int dimx, int dimy, p_size** matrix_out);
+void passBandInt (metaImage * image);
+p_size ** passBandThreshold (p_size ** image, int dimx, int dimy, int * threshold, int ii);
+void imageHistogram2D (metaImage * mImage, long int * histogram );
+int * findThreshold (long int * histogram);
+void filterImage (metaImage * image, void (* algorithm)(metaImage * image));
+void thresholdInt (metaImage * image);
+p_size ** threshold (p_size ** image, int dimx, int dimy, int ii, int threshold);
+void inverseThresholdInt (metaImage * image);
+p_size ** inverseThreshold (p_size ** image, int dimx, int dimy, int ii);
+int findThresholdII(long int * histogram);
+void noFilter (metaImage * image);
+void adaptiveThresholdInt (metaImage * image);
+p_size ** adaptiveThreshold (p_size ** image, int dimx, int dimy, int ii, int threshold);

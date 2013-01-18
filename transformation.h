@@ -1,0 +1,23 @@
+/*functions implemented in rotazioni_include.c*/
+void righe_per_colonne(double *vect_in, double *matrix, double *vect_out);
+void prod_vect(double *vect_1, double *vect_2, double *vect_out);
+void matrix_X(double angle,double *matrix);
+void matrix_Y(double angle,double *matrix);
+void matrix_Z(double angle,double *matrix);
+void matrix_ZYX (double * tre_angoli, double * matrix);
+void matrix_XYZ (double * tre_angoli, double * matrix);
+void rotationForward (double * vett_orig, double * vett_roto, double * tre_angoli);
+void rotationRewind (double * vett_orig, double * vett_roto, double * tre_angoli);
+void ruotamento_on_X_Y_Z(double *v_orig_1, double *v_orig_2, double *v_orig_3, double *tre_angoli);
+void trans_bis_roto(double *v_orig, double *vect_out, double *tre_angoli_pre, double *tre_angoli_post);
+void zooming (double* vettOrig, double* vettPost, double* zoom);
+void shearing (double* vettOrig, double* vettPost, double* zoom);
+void transform (double * coordIn, double * coordOut, double * conf);
+void transformInv (double * coordIn, double * coordOut, double * conf);
+void transformLight (double * vettOrig, double * matrixRot, double * vettPost, double * trasl);
+void invTransformLight (double * vettOrig, double * matrixRot, double * vettPost, double * trasl);
+void forwardMatrix (double * matrixOut, double * conf);
+void inverseMatrix (double * matrixOut, double * conf);
+void matrix_shear (double * tre_shear, double * matrix);
+void matrix_zoom (double * tre_zooming, double * matrix);
+void matrixProduct (double * matrix1, double * matrix2, double * result, int dim);
